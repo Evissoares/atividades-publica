@@ -16,12 +16,15 @@ public class Principal {
 			
 			int opcao; 
 			while(true) {
+				
 				opcao = Teclado.inteiro("Escolha uma opção" 
 						+ "\n[1] - Cadastrar" 
 						+ "\n[2] - Listar Todos os produtos"
 						+ "\n[3] - Alterar produto"
 						+ "\n[4] - Remover produto"
 						+ "\n[0] - Sair do sistema");
+				
+				
 				if(opcao > 4 || opcao < 0) {
 					JOptionPane.showMessageDialog(null, "Opção inválida");
 					continue;
@@ -41,17 +44,6 @@ public class Principal {
 			
 			
 		}
-		
-		
-		
-		
-		
-		/**
-		 * Cadastrar; Listar todos os produtos; Alterar produtos (pesquise pelo nome do
-		 * produto, peça o nome, valor e marca para efetuar a alteração); Remover
-		 * produtos (remova pelo nome do produto); Finalizar sistema.
-		 * 
-		 */
 
 	}
 	
